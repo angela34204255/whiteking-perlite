@@ -283,6 +283,58 @@
     .egrid b{margin-top:10px!important}
     .sgal{grid-template-columns:1fr 1fr 1fr;gap:6px}
   }
+  /* 입자 크기 */
+  .gsec{background:var(--paper)}
+  .gscale{margin-top:40px;background:#fff;border-radius:18px;padding:12px;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+  .gscale svg{width:100%;display:block}
+  .glab{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;text-align:center}
+  .glab b{display:block;font-size:clamp(16px,3.2vw,22px);color:#7a7e88}
+  .glab .me b{color:var(--navy)}
+  .glab small{display:block;font-size:clamp(14px,2.7vw,17px);color:#7a7e88;font-weight:700;margin-top:2px}
+  .glab .me small{color:var(--berry)}
+  .glab span{display:block;font-size:clamp(13px,2.6vw,16px);color:var(--sub);margin-top:6px;line-height:1.5}
+  .gsec .bene{margin-top:30px}
+  /* 경제성 · 염류 */
+  .econ{background:#fff}
+  .salt{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:14px;text-align:center}
+  .salt figure{background:var(--paper);border-radius:18px;padding:16px 8px 20px}
+  .salt svg{width:100%;max-width:250px;margin:0 auto;display:block}
+  .salt b{display:block;font-size:clamp(16px,3.4vw,23px);color:var(--navy);margin-top:10px}
+  .salt .bad b{color:#8a6a4c}
+  .salt span{display:block;font-size:clamp(14px,2.7vw,17px);color:var(--sub);margin-top:6px;line-height:1.55}
+  .why3{margin-top:24px;background:var(--navy);color:#fff;border-radius:20px;padding:clamp(24px,5vw,38px)}
+  .why3 h3{font-size:clamp(24px,5vw,34px);font-weight:900;letter-spacing:-0.04em;line-height:1.35}
+  .why3 h3 em{font-style:normal;color:#a9bbf0}
+  .why3 ol{list-style:none;margin-top:22px;display:grid;gap:16px}
+  .why3 li{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:start}
+  .why3 li i{grid-row:span 2;font-style:normal;width:36px;height:36px;border-radius:50%;background:#fff;color:var(--navy);font-weight:900;display:flex;align-items:center;justify-content:center;font-size:18px}
+  .why3 li b{font-size:clamp(18px,3.6vw,23px)}
+  .why3 li span{font-size:clamp(15px,2.9vw,18px);color:rgba(255,255,255,.78);line-height:1.6}
+  .why3 p{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.2);font-size:clamp(15px,2.9vw,18px);line-height:1.65;color:rgba(255,255,255,.85)}
+  .why3 p b{color:#fff}
+  .vs.time .h div:nth-child(2){background:#efe6dc;color:#8a6a4c}
+  .vs.time .r div:nth-child(2){color:#8a6a4c}
+  .subh{margin-top:70px;font-size:clamp(26px,5.4vw,38px);font-weight:900;color:var(--navy);letter-spacing:-0.04em;line-height:1.3}
+  .subh em{font-style:normal;color:var(--berry)}
+  .econ .calcbox{margin-top:28px}
+  .ebars{margin-top:18px;background:#fff;border-radius:14px;padding:6px 20px 18px}
+  .ebar{margin-top:14px}
+  .ebar .t{display:flex;justify-content:space-between;gap:8px;font-size:clamp(15px,3vw,18px);font-weight:700;color:var(--navy)}
+  .ebar .t span{font-weight:900;white-space:nowrap}
+  .ebar .g{height:24px;border-radius:12px;background:#eef0f4;margin-top:6px;overflow:hidden}
+  .ebar .g i{display:block;height:100%;border-radius:12px;background:var(--peat);transition:width .3s}
+  .ebar.mx .g i{background:linear-gradient(90deg,var(--peat) 0 70%,#fff 70% 71%,#b9c6ea 71%)}
+  .ediff{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:clamp(18px,3.6vw,24px);font-weight:900;color:var(--berry);line-height:1.45}
+  .ediff small{display:block;font-size:.68em;font-weight:500;color:var(--sub);margin-top:4px}
+  .eunit{font-size:15px;color:#8a8f9c;margin-top:8px}
+  .econ .bene div{background:var(--paper)}
+  .econ .btn.big{margin-top:6px}
+  @media (max-width:560px){
+    .glab{gap:6px}
+    .salt{gap:8px}
+    .salt figure{padding:12px 4px 16px}
+    .vs.time .h,.vs.time .r{grid-template-columns:.8fr 1fr 1fr}
+  }
 </style>
 </head>
 <body>
@@ -351,6 +403,9 @@
       <div class="r"><div>바다를 건너는 것</div><div>부풀린 완제품<br>(대부분 공기)</div><div>작고 단단한 원석</div></div>
       <div class="r"><div>팽창·제조</div><div>해외</div><div>국내 (KTS테크)</div></div>
       <div class="r"><div>운송 과정</div><div>해상 운송과<br>여러 번의 상·하차</div><div>국내 공장에서<br>농가로</div></div>
+      <div class="r"><div>입자 상태</div><div>먼 운송·잦은 상하차로<br>부서져 가루가 늘 수 있음</div><div>운송 거리가 짧아<br>입자 모양 유지에 유리</div></div>
+      <div class="r"><div>가격·공급</div><div>해상 운임·환율에<br>따라 출렁임</div><div>국내 생산으로<br>비교적 안정적</div></div>
+      <div class="r"><div>받기까지</div><div>선적·통관 일정에<br>좌우됨</div><div>국내 공장에서<br>출고</div></div>
       <div class="r"><div>문의·상담</div><div>수입·유통 단계를<br>거쳐서</div><div>제조사가<br>직접</div></div>
     </div>
     <div class="punch">
@@ -372,6 +427,27 @@
       <div class="c"><span class="no">02</span><svg viewBox="0 0 64 64"><path d="M32 8c10 13 17 22 17 30a17 17 0 0 1-34 0c0-8 7-17 17-30z"/><path d="M24 41a8 8 0 0 0 8 8"/></svg><b>배수성</b><span>과도한 수분 정체 완화</span></div>
       <div class="c"><span class="no">03</span><svg viewBox="0 0 64 64"><path d="M14 50c0-21 13-37 40-40-3 27-19 40-40 40z"/><path d="M14 50 35 29"/></svg><b>경량성</b><span>배지 혼합 및 작업 편의성</span></div>
       <div class="c"><span class="no">04</span><svg viewBox="0 0 64 64"><circle cx="32" cy="16" r="6"/><circle cx="20" cy="32" r="6"/><circle cx="44" cy="32" r="6"/><circle cx="10" cy="48" r="6"/><circle cx="32" cy="48" r="6"/><circle cx="54" cy="48" r="6"/></svg><b>대립 구조</b><span>배지 내 공극 형성에 도움</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 입자 크기 -->
+<section class="gsec sec">
+  <div class="wrap">
+    <div class="eyebrow">GRAIN SIZE</div>
+    <h2>입자가 커야<br><em>공기 길이 오래 갑니다</em></h2>
+    <p class="lead">같은 펄라이트라도 입자 크기에 따라 배지 속 역할이 달라집니다. 화이트킹 1400은 블루베리 대형 포트 재배에 맞춰 <b style="color:#1d2a56">약 3~6mm 대립</b>으로 만들었습니다.</p>
+    <div class="gscale"><svg data-gsize viewBox="0 0 600 214" role="img" aria-label="펄라이트 입자 크기 비교: 미립, 소립, 화이트킹 대립"></svg></div>
+    <div class="glab">
+      <div><b>미립</b><small>1mm 안팎</small><span>피트모스 틈을 메워<br>공극이 줄기 쉬움</span></div>
+      <div><b>소립</b><small>1~3mm</small><span>주로 육묘·상토용</span></div>
+      <div class="me"><b>화이트킹 1400</b><small>약 3~6mm</small><span>틈을 받쳐 물길과<br>공기 길을 지킴</span></div>
+    </div>
+    <p class="note center">※ 그림 속 입자들은 실제 크기 비율대로 그렸습니다. 아래 막대가 1cm입니다.</p>
+    <div class="bene">
+      <div><b>공극 유지</b><span>큰 입자가 피트모스 사이를 받쳐 숨 쉴 틈을 남깁니다</span></div>
+      <div><b>가루 날림 적음</b><span>배합할 때 날리는 미세 가루가 적어 작업이 편합니다</span></div>
+      <div><b>대형 포트에 적합</b><span>50L 이상 큰 화분일수록 대립의 차이가 큽니다</span></div>
     </div>
   </div>
 </section>
@@ -437,6 +513,69 @@
     </div>
     <div class="bar"><div class="p">피트모스 70%</div><div class="w">펄라이트 30%</div></div>
     <p class="note">※ 부피 기준 권장 비율이며, 재배 환경과 관수 방식에 따라 조절할 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- 경제성 · 염류 -->
+<section class="econ sec" id="econ">
+  <div class="wrap">
+    <div class="eyebrow">PEAT 100% vs 7 : 3</div>
+    <h2>피트모스만 쓰지 말고<br><em>7:3으로 섞어야 하는 이유</em></h2>
+    <p class="lead">배지 값은 처음 살 때의 가격이 전부가 아닙니다. 몇 해를 버티는지, 그 사이 뿌리 환경이 어떻게 바뀌는지가 진짜 비용입니다.</p>
+
+    <div class="salt">
+      <figure class="bad"><svg data-salt="peat" viewBox="0 0 260 310" role="img" aria-label="피트모스 100% 화분: 물이 잘 빠지지 않고 염류가 쌓임"></svg><b>피트모스 100%</b><span>물이 더디게 빠지고<br>남은 염류가 배지에 쌓입니다</span></figure>
+      <figure><svg data-salt="mix" viewBox="0 0 260 310" role="img" aria-label="피트모스 7 펄라이트 3 화분: 물길을 따라 염류가 빠져나감"></svg><b>피트모스 7 : 펄라이트 3</b><span>물길이 살아 있어<br>염류가 물과 함께 빠져나갑니다</span></figure>
+    </div>
+
+    <div class="why3">
+      <h3>펄라이트는 시간이 지나도<br><em>염류를 쌓아 두지 않습니다</em></h3>
+      <ol>
+        <li><i>1</i><b>붙잡지 않습니다</b><span>펄라이트는 화산석을 부풀린 광물이라 비료 성분(염류)을 끌어당겨 붙잡는 힘이 거의 없습니다.</span></li>
+        <li><i>2</i><b>썩지 않습니다</b><span>유기물이 아니어서 해가 지나도 분해되거나 내려앉지 않고 처음 모양을 유지합니다.</span></li>
+        <li><i>3</i><b>씻겨 나갑니다</b><span>입자 사이 물길이 막히지 않아, 물을 충분히 주면 남은 염류가 배수와 함께 빠져나갑니다.</span></li>
+      </ol>
+      <p>블루베리는 뿌리가 가늘고 <b>염류에 약한 작물</b>입니다. 배지에 염류가 쌓이면 잎끝이 타고 생육이 더뎌집니다.</p>
+    </div>
+
+    <div class="vs time">
+      <div class="h"><div>해가 지나면</div><div>피트모스 100%</div><div>피트모스 7 : 펄라이트 3</div></div>
+      <div class="r"><div>심은 첫해</div><div>부드럽고<br>물을 잘 머금음</div><div>물과 공기가<br>함께 머무름</div></div>
+      <div class="r"><div>2~3년 차</div><div>분해되어 잘아지고<br>내려앉음</div><div>펄라이트가<br>틈을 받쳐 줌</div></div>
+      <div class="r"><div>물 빠짐</div><div>점점 느려짐</div><div>비교적 오래 유지</div></div>
+      <div class="r"><div>염류</div><div>씻겨 나가기 어려워<br>쌓이기 쉬움</div><div>관수 때 물과 함께<br>빠져나가기 쉬움</div></div>
+      <div class="r"><div>배지 관리</div><div>보충·교체를<br>더 자주 고민</div><div>배지 구조를<br>더 오래 유지</div></div>
+    </div>
+    <p class="note">※ 일반적인 배지 특성에 대한 설명이며, 관수·시비 방법과 재배 환경에 따라 달라질 수 있습니다. 배지 EC(염류 농도)를 정기적으로 확인하시길 권합니다.</p>
+
+    <h3 class="subh">재료비도 직접 비교해 보세요</h3>
+    <p class="lead">쓰고 계신 피트모스 가격을 넣으면 피트모스 100%와 7:3 배합의 재료비를 바로 비교해 드립니다.</p>
+    <div class="calcbox">
+      <div class="row">
+        <div><label for="ePlants">재배 주수</label><input id="ePlants" type="number" inputmode="numeric" min="1" value="300"></div>
+        <div><label for="ePot">화분 용량</label><select id="ePot"><option value="20">20L</option><option value="30">30L</option><option value="40">40L</option><option value="50" selected>50L</option><option value="60">60L</option><option value="70">70L</option><option value="80">80L</option><option value="100">100L</option></select></div>
+      </div>
+      <div class="row" style="margin-top:12px">
+        <div><label for="ePrice">피트모스 1포대 가격 (원)</label><input id="ePrice" type="number" inputmode="numeric" min="0" step="1000" value="30000"></div>
+        <div><label for="eVol">1포대를 풀었을 때 부피 (L)</label><input id="eVol" type="number" inputmode="numeric" min="1" value="200"></div>
+      </div>
+      <div class="ebars">
+        <div class="ebar"><div class="t">피트모스 100%<span id="eA">-</span></div><div class="g"><i id="eAbar"></i></div></div>
+        <div class="ebar mx"><div class="t">피트모스 7 : 펄라이트 3<span id="eB">-</span></div><div class="g"><i id="eBbar"></i></div></div>
+        <div class="ediff" id="eDiff"></div>
+        <div class="eunit" id="eUnit"></div>
+      </div>
+    </div>
+    <p class="note">※ 처음 넣은 3만 원 / 200L는 예시 값입니다. 실제로 사시는 가격과 부피를 넣어 주세요. 화이트킹 단가(1L당 100원)는 부가세·배송비 별도 기준이니, 피트모스 가격도 같은 기준으로 넣어야 정확히 비교됩니다.</p>
+
+    <h3 class="subh">재료비 말고, <em>이런 비용</em>도 있습니다</h3>
+    <div class="bene">
+      <div><b>배지 보충·교체</b><span>내려앉은 배지를 채우는 재료비와 일손</span></div>
+      <div><b>뿌리 장해</b><span>과습·염류 피해로 생기는 생육 부진과 보식</span></div>
+      <div><b>씻어 내기 관수</b><span>쌓인 염류를 빼기 위한 물과 시간</span></div>
+    </div>
+    <p class="ctaline">7:3 배합은 이런 보이지 않는 비용을 줄이는 데 도움이 됩니다.</p>
+    <a class="btn big" href="#calc">우리 농장 필요 수량 계산하기</a>
   </div>
 </section>
 
@@ -722,6 +861,50 @@ function calc(){const p=Math.max(0,parseInt(cPlants.value)||0),v=+cPot.value,nee
   document.getElementById("cNeed").textContent=fmt(Math.round(need))+"L";document.getElementById("cBags").textContent="톤백 "+calcBags+"개"}
 cPlants.addEventListener("input",calc);cPot.addEventListener("change",calc);calc();
 document.getElementById("cUse").addEventListener("click",()=>setQty(calcBags));
+
+// ----- 입자 크기 비교 그림 (10px = 1mm) -----
+document.querySelectorAll("svg[data-gsize]").forEach(svg=>{const R=rng(88);let s="";
+  [[0.15,0.5,1],[0.5,1.5,2],[1.5,3,3]].forEach(([r0,r1,k],i)=>{const x0=8+i*200,W=184,H=150,id="gp"+k,pts=[];
+    s+=`<clipPath id="${id}"><rect x="${x0}" y="8" width="${W}" height="${H}" rx="12"/></clipPath><rect x="${x0}" y="8" width="${W}" height="${H}" rx="12" fill="${k===3?"#eef1f8":"#f3f1ec"}"/><g clip-path="url(#${id})">`;
+    for(let t=0;t<6000&&pts.length<900;t++){const r=(r0+R()*(r1-r0))*10,x=x0-4+R()*(W+8),y=4+R()*(H+8);
+      if(pts.some(p=>Math.hypot(p[0]-x,p[1]-y)<(p[2]+r)*.9))continue;pts.push([x,y,r])}
+    pts.forEach(p=>s+=grain("white",p[0],p[1],p[2],R));
+    s+=`</g><g stroke="#1d2a56" stroke-width="2" fill="none"><path d="M${x0+42} 176h100M${x0+42} 169v14M${x0+142} 169v14"/></g><text x="${x0+92}" y="206" text-anchor="middle" font-size="20" font-weight="700" fill="#1d2a56" font-family="Noto Sans KR">1cm</text>`;
+    if(k===3)s+=`<rect x="${x0}" y="8" width="${W}" height="${H}" rx="12" fill="none" stroke="#3b4f93" stroke-width="3"/>`});
+  svg.innerHTML=s});
+
+// ----- 염류 비교 그림 -----
+document.querySelectorAll("svg[data-salt]").forEach(svg=>{const m=svg.dataset.salt,R=rng(m==="mix"?71:72),pot="M30 62 L230 62 L206 268 L54 268 Z";
+  let s=`<clipPath id="sc-${m}"><path d="${pot}"/></clipPath><path d="${pot}" fill="#3f2a1a"/><g clip-path="url(#sc-${m})">`;
+  if(m==="mix"){const big=[];for(let t=0;t<900&&big.length<46;t++){const b=[38+R()*184,66+R()*200,9+R()*5];if(big.some(c=>Math.hypot(c[0]-b[0],c[1]-b[1])<c[2]+b[2]+3))continue;big.push(b)}
+    for(let i=0;i<900;i++){const x=28+R()*204,y=60+R()*212;if(big.some(b=>Math.hypot(b[0]-x,b[1]-y)<b[2]+4))continue;s+=grain("peat",x,y,3+R()*3,R)}
+    big.forEach(b=>s+=grain("white",b[0],b[1],b[2],R));
+    s+=`<g fill="none" stroke="#7aa6dc" stroke-width="3" stroke-linecap="round" opacity=".9"><path d="M95 66c8 40-14 70 0 110s-8 60 4 95"/><path d="M165 66c-8 45 14 75 0 115s10 55-2 90"/></g>`}
+  else{for(let i=0;i<1400;i++)s+=grain("peat",28+R()*204,60+R()*212,2.5+R()*2.5,R);
+    for(let i=0;i<6;i++)s+=`<ellipse cx="${70+R()*120}" cy="${150+R()*100}" rx="${14+R()*10}" ry="${6+R()*4}" fill="#5f86b8" opacity=".55"/>`}
+  const salt=(x,y)=>`<rect x="${(x-3).toFixed(1)}" y="${(y-3).toFixed(1)}" width="6" height="6" transform="rotate(45 ${x.toFixed(1)} ${y.toFixed(1)})" fill="#fff4c2" stroke="#b08a2a" stroke-width="1"/>`;
+  if(m==="peat"){s+=`<rect x="20" y="62" width="220" height="7" fill="#efe4c0" opacity=".85"/>`;for(let i=0;i<55;i++){const top=R()<.45;s+=salt(40+R()*180,top?66+R()*10:84+R()*178)}}
+  else for(let i=0;i<4;i++)s+=salt(60+R()*140,100+R()*150);
+  s+=`</g><path d="${pot}" fill="none" stroke="#2b2f38" stroke-width="4" stroke-linejoin="round"/><rect x="22" y="56" width="216" height="10" rx="3" fill="#2b2f38"/>`;
+  const drop=(x,y,c="#5f9be0")=>`<path d="M${x} ${y-11} q8 11 0 15 q-8 -4 0 -15z" fill="${c}"/>`;
+  s+=drop(90,36)+drop(130,26)+drop(170,36);
+  if(m==="mix"){[[100,0],[130,1],[160,2]].forEach(([x,k])=>{s+=`<path d="M${x} 272 v${22+k%2*6}" stroke="#5f9be0" stroke-width="4" stroke-linecap="round"/>`;s+=salt(x+(k-1)*2,290+k%2*8)})}
+  else s+=drop(130,292,"#5f9be0");
+  svg.innerHTML=s});
+
+// ----- 재료비 비교 (피트모스 100% vs 7:3) -----
+const eIds=["ePlants","ePot","ePrice","eVol"].map(id=>document.getElementById(id));
+function econ(){const [p,v,price,vol]=eIds.map(e=>Math.max(0,parseFloat(e.value)||0));
+  const peatL=vol>0?price/vol:0,perL=UNIT_PRICE/1400,L=p*v,a=L*peatL,b=L*(.7*peatL+.3*perL),mx=Math.max(a,b)||1,r=n=>Math.round(n/1000)*1000;
+  document.getElementById("eA").textContent="약 "+fmt(r(a))+"원";document.getElementById("eB").textContent="약 "+fmt(r(b))+"원";
+  document.getElementById("eAbar").style.width=(a/mx*100)+"%";document.getElementById("eBbar").style.width=(b/mx*100)+"%";
+  const d=a-b,el=document.getElementById("eDiff");
+  if(!L||!peatL)el.innerHTML="주수와 피트모스 가격을 넣어 주세요.";
+  else if(d>=1000)el.innerHTML=`7:3 배합이 재료비 약 ${fmt(r(d))}원 절약<small>배지 ${fmt(Math.round(L))}L 기준, 피트모스 대신 펄라이트를 30% 넣었을 때</small>`;
+  else if(d<=-1000)el.innerHTML=`이 단가에서는 재료비가 약 ${fmt(r(-d))}원 더 듭니다<small>대신 배지 수명과 염류 관리에서 차이가 납니다. 위의 비교를 함께 봐 주세요.</small>`;
+  else el.innerHTML=`재료비는 거의 같습니다<small>같은 값이라면 해가 지나도 숨 쉬는 7:3 배지가 유리합니다.</small>`;
+  document.getElementById("eUnit").textContent=`피트모스 1L당 약 ${fmt(Math.round(peatL))}원 · 화이트킹 펄라이트 1L당 100원`}
+eIds.forEach(e=>e.addEventListener("input",econ));econ();
 
 // ----- 주문 폼 -----
 const qty=document.getElementById("qty");
