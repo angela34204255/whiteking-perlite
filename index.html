@@ -197,6 +197,14 @@
   .addr{display:grid;grid-template-columns:1fr auto;gap:8px}
   .addr .full{grid-column:1/-1}
   .addr button{font:inherit;font-size:17px;font-weight:700;border:0;border-radius:12px;background:var(--navy);color:#fff;padding:0 16px;cursor:pointer}
+  .zr{border:1.5px solid #d3d6df;border-radius:12px;padding:14px 16px}
+  .zrchk{display:flex;gap:10px;align-items:flex-start;font-size:18px;font-weight:700;color:var(--ink);cursor:pointer}
+  .zrchk input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--berry)}
+  .zrdocs{margin-top:12px;background:#fff8e6;border-radius:10px;padding:12px 14px;font-size:16px;color:#5a4a1e;line-height:1.6}
+  .zrdocs b{color:#3d300a}
+  .zrdocs ol{margin:6px 0 6px 20px}
+  .zrdocs span{display:block;font-size:14px;color:#7a6a3e}
+  .done .zrdone{margin-top:14px;background:#fff8e6;border-radius:12px;padding:12px;color:#5a4a1e;font-size:16px}
   .agree{margin-top:24px;background:#f6f7fa;border-radius:14px;padding:16px 18px}
   .agree details summary{cursor:pointer;font-size:16px;color:var(--sub)}
   .agree .terms{font-size:15px;color:var(--sub);line-height:1.7;margin-top:10px}
@@ -519,6 +527,7 @@
       <li>톤백 1개가 약 160~180kg이므로 지게차 등 하차 장비를 미리 준비해 주세요.</li>
       <li>배송비는 지역에 따라 별도로 안내드립니다.</li>
       <li>2개 이상 또는 차량 단위 구매는 별도 상담이 가능합니다.</li>
+      <li><b>농업인 영세율 적용</b>을 원하시면 <b>농업경영체 등록증</b>과 <b>주민등록증 사본</b>을 준비해 주세요.</li>
     </ul>
   </div>
 </section>
@@ -576,6 +585,18 @@
         </div>
 
         <div class="f">
+          <label>농업인 영세율 적용</label>
+          <div class="zr">
+            <label class="zrchk"><input type="checkbox" id="zeroRate" name="zeroRate" value="Y">영세율 적용을 희망합니다 (농업인 직접 구매)</label>
+            <div class="zrdocs">
+              <b>아래 두 가지 서류를 준비해 주세요</b>
+              <ol><li>농업경영체 등록증(등록확인서) 사본</li><li>주민등록증 사본</li></ol>
+              <span>서류는 이 폼에 올리지 마시고, 견적 연락드릴 때 보내실 방법을 안내해 드립니다.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="f">
           <label for="memo">요청 사항</label>
           <textarea id="memo" name="memo" maxlength="500" placeholder="희망 배송일, 진입로 안내 등"></textarea>
         </div>
@@ -603,6 +624,7 @@
         <div class="ic"><svg width="36" height="36" viewBox="0 0 36 36"><path d="M8 18.5l7 7 13-14" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <b>신청이 접수되었습니다</b>
         <p>배송비를 계산해 남겨 주신 연락처로<br>곧 연락드리겠습니다.</p>
+        <p class="zrdone" id="zrDone" hidden>영세율 적용을 위해 <b>농업경영체 등록증</b>과<br><b>주민등록증</b> 사본을 미리 준비해 주세요.</p>
       </div>
     </div>
 
@@ -733,10 +755,11 @@ form.addEventListener("submit",async e=>{
   if(!ORDER_ENDPOINT)return fail("주문 접수 준비 중입니다. 전화(010-3420-4255)로 주문해 주세요.");
   btn.disabled=true;btn.textContent="접수 중...";
   const body=new URLSearchParams({qty:q,name,phone:tel,zip:zip.value.trim(),addr1:addr1.value.trim(),addr2:addr2.value.trim(),
-    unload:form.unload.value,memo:form.memo.value.trim(),website:form.website.value,agree:"Y",page:location.href});
+    unload:form.unload.value,memo:(document.getElementById("zeroRate").checked?"[영세율 희망] ":"")+form.memo.value.trim(),website:form.website.value,agree:"Y",page:location.href});
   try{
     await fetch(ORDER_ENDPOINT,{method:"POST",mode:"no-cors",body});
     form.style.display="none";document.getElementById("done").style.display="block";
+    document.getElementById("zrDone").hidden=!document.getElementById("zeroRate").checked;
     document.getElementById("order").scrollIntoView({behavior:"smooth"});
   }catch(err){btn.disabled=false;btn.textContent="배송비 포함 견적 받기";fail("전송에 실패했습니다. 잠시 후 다시 시도하시거나 전화로 주문해 주세요.")}
 });
