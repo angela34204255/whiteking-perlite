@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>화이트킹 펄라이트 1400 | 블루베리 전문 농가를 위한 대용량 펄라이트</title>
+<meta name="description" content="뿌리가 숨 쉬는, 가볍고 단단한 배지. 블루베리 재배를 위한 1,400L 톤백 대립 펄라이트. 톤백 1개 140,000원.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1d2a56; --berry:#3b4f93; --ink:#1b2033; --sub:#5a6070;
+    --line:#e3e1da; --paper:#f6f4ee; --peat:#6b4a2f; --pad:clamp(20px,6vw,60px);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:64px}
+  body{font-family:"Noto Sans KR","Malgun Gothic",sans-serif;color:var(--ink);letter-spacing:-0.02em;word-break:keep-all;background:#fff;-webkit-text-size-adjust:100%}
+  img{max-width:100%;display:block}
+  section{position:relative;overflow:hidden}
+  .wrap{max-width:860px;margin:0 auto;padding:0 var(--pad)}
+  .sec{padding:clamp(70px,12vw,110px) 0}
+  .eyebrow{font-size:16px;font-weight:700;letter-spacing:.18em;color:var(--berry)}
+  h2{font-size:clamp(32px,6.4vw,48px);line-height:1.3;font-weight:800;color:var(--navy);letter-spacing:-0.04em;margin-top:12px}
+  h2 em{font-style:normal;color:var(--berry)}
+  .lead{font-size:clamp(18px,3vw,23px);line-height:1.75;color:var(--sub);margin-top:20px}
+  .note{font-size:15px;color:#8a8f9c;margin-top:14px;line-height:1.6}
+  .center{text-align:center}
+
+  /* 상단 바 */
+  .top{position:fixed;inset:0 0 auto 0;z-index:50;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);background:rgba(14,22,48,.0);transition:background .25s}
+  .top.on{background:rgba(255,255,255,.96);box-shadow:0 1px 0 var(--line)}
+  .logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:17px;letter-spacing:.12em;color:#fff;text-decoration:none}
+  .top.on .logo{color:var(--navy)}
+  .logo svg path{stroke:currentColor}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--berry);color:#fff;font-weight:800;font-size:17px;border:0;border-radius:999px;padding:10px 20px;text-decoration:none;cursor:pointer;font-family:inherit}
+  .btn.big{font-size:21px;padding:17px 30px;width:100%}
+
+  /* 01 메인 */
+  .hero{min-height:100svh;display:flex;align-items:flex-start;background:#0e1630 url(assets/blueberry_closeup.jpg) 55% 100%/cover no-repeat;color:#fff}
+  .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,22,48,.96) 0%,rgba(14,22,48,.85) 26%,rgba(14,22,48,.25) 52%,rgba(14,22,48,0) 70%,rgba(14,22,48,.45) 100%)}
+  .hero .wrap{position:relative;z-index:1;width:100%;padding-top:clamp(110px,18vh,150px)}
+  .hero h1{font-family:"Noto Serif KR",serif;font-size:clamp(37px,8vw,64px);line-height:1.38;font-weight:700;letter-spacing:-0.03em;text-shadow:0 2px 14px rgba(0,0,0,.3)}
+  .hero .b{display:inline-block;margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.45);font-size:clamp(15px,2.5vw,20px);font-weight:700;letter-spacing:.22em}
+  .hero p{font-size:clamp(17px,3vw,23px);line-height:1.75;margin-top:14px;opacity:.92}
+  .hero .scroll{position:absolute;z-index:1;left:50%;bottom:28px;transform:translateX(-50%);color:#fff;font-size:14px;letter-spacing:.2em;opacity:.8;text-align:center}
+  .hero .scroll:after{content:"";display:block;width:1px;height:34px;background:#fff;margin:10px auto 0;opacity:.7}
+
+  /* 02 제품 소개 */
+  .intro{background:linear-gradient(180deg,#eef1f8,#f7f5f0)}
+  .pill{display:inline-block;background:var(--navy);color:#fff;font-size:clamp(15px,2.5vw,18px);font-weight:700;padding:9px 18px;border-radius:40px}
+  .intro h3{margin-top:20px;font-size:clamp(51px,11.5vw,87px);line-height:1.12;font-weight:900;color:var(--navy);letter-spacing:-0.05em}
+  .intro h3 .new{display:inline-block;vertical-align:top;margin:10px 0 0 10px;font-size:clamp(15px,2.8vw,21px);font-weight:800;color:#c4560f;background:#ffe9b8;border-radius:8px;padding:5px 10px;letter-spacing:0}
+  .intro .desc{margin-top:22px;font-size:clamp(20px,3.4vw,25px);line-height:1.7;color:#3d4357}
+  .intro .desc b{color:var(--navy)}
+  .pvis{position:relative;margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:end}
+  .pvis .zoom{aspect-ratio:1;border-radius:50%;overflow:hidden;border:7px solid #fff;box-shadow:0 14px 34px rgba(29,42,86,.18)}
+  .pvis .zoom img{width:100%;height:100%;object-fit:cover;transform:scale(1.15)}
+  .pvis .bagbox{text-align:center}
+  .pvis .bagbox img,.pvis .bagbox svg{width:100%;max-width:340px;margin:0 auto}
+  .pvis .bagphoto ~ .bagsvg{display:none}
+  .pvis .cap{font-size:16px;color:var(--sub);margin-top:10px;text-align:center}
+
+  /* 03 핵심 조건 */
+  .core{background:var(--navy);color:#fff}
+  .core .eyebrow{color:#9fb0e0}
+  .core h2{color:#fff} .core h2 em{color:#a9bbf0}
+  .cgrid{margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .cgrid .c{position:relative;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:clamp(24px,5vw,40px) clamp(18px,4vw,32px)}
+  .cgrid .no{position:absolute;right:20px;top:18px;font-size:18px;font-weight:800;color:rgba(255,255,255,.3)}
+  .cgrid svg{width:clamp(40px,8vw,58px);height:clamp(40px,8vw,58px);stroke:#fff;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+  .cgrid b{display:block;font-size:clamp(23px,5.1vw,32px);font-weight:800;margin-top:18px}
+  .cgrid span{display:block;font-size:clamp(16px,3vw,21px);color:rgba(255,255,255,.75);margin-top:8px;line-height:1.5}
+
+  /* 펄라이트가 필요한 이유 */
+  .compare{margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .compare figure{text-align:center}
+  .compare .circ{width:100%;max-width:300px;aspect-ratio:1;margin:0 auto;border-radius:50%;overflow:hidden;border:5px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+  .compare .circ svg{width:100%;height:100%;display:block}
+  .compare b{display:block;font-size:clamp(18px,3.4vw,24px);color:var(--navy);margin-top:18px}
+  .compare .bad b{color:#8a6a4c}
+  .compare span{display:block;font-size:clamp(15px,2.8vw,18px);color:var(--sub);margin-top:6px;line-height:1.6}
+
+  /* 톤백 */
+  .bigbag{background:var(--paper)}
+  .eq{display:grid;grid-template-columns:1fr auto .62fr;gap:14px;align-items:center;margin-top:44px}
+  .sacks{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+  .eq .sym{font-size:clamp(39px,8vw,69px);font-weight:300;color:var(--navy)}
+  .eqlabels{display:grid;grid-template-columns:1fr auto .62fr;gap:14px;margin-top:16px;text-align:center;font-weight:700;color:var(--navy);font-size:clamp(16px,3vw,21px)}
+  .eqlabels span{display:block;font-weight:500;color:var(--sub);font-size:.85em;margin-top:2px}
+  .eqlabels i{visibility:hidden;font-size:clamp(39px,8vw,69px)}
+  .bene{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .bene div{background:#fff;border-radius:14px;padding:20px 10px;text-align:center}
+  .bene b{display:block;font-size:clamp(16px,3.2vw,21px);color:var(--navy)}
+  .bene span{display:block;font-size:clamp(14px,2.6vw,17px);color:var(--sub);margin-top:6px;line-height:1.5}
+
+  /* 배합 */
+  .mix{background:linear-gradient(180deg,#f3efe5,#f8f6f0)}
+  .grainband{margin-top:36px;height:clamp(150px,30vw,240px);border-radius:18px;overflow:hidden;position:relative}
+  .grainband img{width:100%;height:100%;object-fit:cover}
+  .grainband span{position:absolute;right:16px;bottom:14px;background:rgba(255,255,255,.94);border-radius:10px;padding:8px 14px;font-size:16px;font-weight:700;color:var(--navy)}
+  .mixrow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:6px;align-items:start;margin-top:40px;text-align:center}
+  .mixrow svg{width:100%}
+  .mixrow .op{font-size:clamp(32px,6.9vw,57px);font-weight:300;color:var(--navy);padding-top:clamp(12px,4vw,36px)}
+  .mixrow b{display:block;font-size:clamp(15px,3.2vw,23px);color:var(--navy);margin-top:8px}
+  .mixrow strong{display:block;font-size:clamp(25px,5.8vw,44px);font-weight:900;color:var(--berry)}
+  .mixrow .res strong{color:var(--navy)}
+  .bar{margin-top:30px;height:50px;border-radius:30px;overflow:hidden;display:flex;font-weight:800;font-size:clamp(15px,3vw,20px)}
+  .bar .p{width:70%;background:var(--peat);color:#fff;display:flex;align-items:center;padding-left:20px}
+  .bar .w{width:30%;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;border:3px solid var(--navy);border-left:0;border-radius:0 30px 30px 0}
+
+  /* 사용 방법 */
+  .sgrid{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .sgrid .s{background:var(--paper);border-radius:16px;overflow:hidden}
+  .sgrid .pic{background:#efece4}
+  .sgrid .pic svg{width:100%;display:block}
+  .sgrid .txt{padding:18px 16px 22px}
+  .tag{display:inline-block;background:var(--navy);color:#fff;font-size:14px;font-weight:800;padding:4px 10px;border-radius:20px;letter-spacing:.06em}
+  .sgrid span.tag{display:inline-block;color:#fff;font-size:14px;margin:0;line-height:1.4}
+  .sgrid b{display:block;font-size:clamp(18px,3.4vw,23px);color:var(--navy);margin-top:10px}
+  .sgrid span{display:block;font-size:clamp(15px,2.8vw,17px);color:var(--sub);margin-top:6px;line-height:1.6}
+
+  /* 재배 환경 */
+  .env{background:var(--paper)}
+  .envphoto{margin-top:40px;aspect-ratio:16/8;border-radius:18px;background:url(assets/farm_aerial.jpg) center 55%/cover;position:relative}
+  .egrid{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .egrid div{background:#fff;border-radius:16px;padding:24px 10px;text-align:center}
+  .egrid svg{width:100%;max-width:130px;height:auto}
+  .egrid b{display:block;font-size:clamp(16px,3.2vw,22px);color:var(--navy);margin-top:10px}
+  .egrid span{display:block;font-size:clamp(14px,2.6vw,17px);color:var(--sub);margin-top:6px;line-height:1.5}
+
+  /* 수량 계산 */
+  .calcbox{margin-top:40px;background:#eef1f8;border-radius:20px;padding:clamp(20px,5vw,34px)}
+  .calcbox .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .calcbox label{display:block;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:6px}
+  .calcbox input,.calcbox select{width:100%;font:inherit;font-size:21px;padding:12px 14px;border:1.5px solid #c9cfe0;border-radius:12px;background:#fff}
+  .calcres{margin-top:18px;background:#fff;border-radius:14px;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .calcres .v{font-size:17px;color:var(--sub);line-height:1.6}
+  .calcres .v strong{display:block;font-size:34px;color:var(--navy);font-weight:900}
+  .calcres .btn{padding:12px 18px}
+  table.qty{width:100%;border-collapse:collapse;margin-top:26px;border-radius:14px;overflow:hidden;font-size:clamp(15px,3vw,20px)}
+  .qty th{background:var(--navy);color:#fff;font-weight:700;padding:13px 4px}
+  .qty td{text-align:center;padding:13px 4px;border-bottom:1px solid var(--line)}
+  .qty td.k{font-weight:800;color:var(--berry)}
+
+  /* 제품 정보 */
+  .info{background:var(--paper)}
+  table.spec{width:100%;border-collapse:collapse;margin-top:36px;background:#fff;border-radius:18px;overflow:hidden}
+  .spec td{font-size:clamp(16px,3vw,20px);padding:15px 20px;border-bottom:1px solid var(--line)}
+  .spec tr:last-child td{border-bottom:0}
+  .spec td:first-child{width:34%;font-weight:700;color:var(--navy);background:#fbfaf6}
+
+  /* 배송 */
+  .shgrid{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .shgrid div{border:2px solid var(--line);border-radius:16px;padding:22px 8px;text-align:center}
+  .shgrid svg{width:46px;height:46px;stroke:var(--navy);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .shgrid b{display:block;font-size:clamp(16px,3.2vw,22px);color:var(--navy);margin-top:10px}
+  .shgrid span{display:block;font-size:clamp(14px,2.6vw,17px);color:var(--sub);margin-top:4px}
+  ul.chk{margin-top:22px;background:var(--paper);border-radius:16px;padding:18px 22px}
+  ul.chk li{list-style:none;font-size:clamp(16px,3vw,20px);color:#3d4357;padding:7px 0 7px 26px;position:relative;line-height:1.55}
+  ul.chk li:before{content:"";position:absolute;left:2px;top:14px;width:12px;height:7px;border-left:3px solid var(--berry);border-bottom:3px solid var(--berry);transform:rotate(-45deg)}
+
+  /* 주문 */
+  .order{background:linear-gradient(160deg,#16214a,#26377a);color:#fff}
+  .order:before{content:"";position:absolute;inset:0;background:url(assets/field_sunset.jpg) center/cover;opacity:.16}
+  .order .wrap{position:relative}
+  .order .eyebrow{color:#9fb0e0}
+  .order h2{color:#fff} .order h2 em{color:#a9bbf0}
+  .order .lead{color:rgba(255,255,255,.75)}
+  .form{margin-top:36px;background:#fff;color:var(--ink);border-radius:22px;padding:clamp(22px,5vw,40px)}
+  .price{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line)}
+  .price small{font-size:16px;font-weight:700;color:var(--sub)}
+  .price strong{display:block;font-size:clamp(39px,8vw,55px);font-weight:900;color:var(--navy);letter-spacing:-0.04em;line-height:1.1}
+  .price strong i{font-style:normal;font-size:.5em;margin-left:2px}
+  .price em{font-style:normal;font-size:16px;color:var(--sub)}
+  .f{margin-top:22px}
+  .f > label{display:block;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:8px}
+  .f > label .req{color:#d0442c;margin-left:3px}
+  .f input[type=text],.f input[type=tel],.f select,.f textarea{width:100%;font:inherit;font-size:20px;padding:14px;border:1.5px solid #d3d6df;border-radius:12px;background:#fff;color:var(--ink)}
+  .f input:focus,.f select:focus,.f textarea:focus{outline:0;border-color:var(--berry);box-shadow:0 0 0 3px rgba(59,79,147,.15)}
+  .f textarea{min-height:90px;resize:vertical}
+  .stepper{display:flex;align-items:center;gap:0;border:1.5px solid #d3d6df;border-radius:12px;overflow:hidden;width:max-content}
+  .stepper button{width:54px;height:54px;border:0;background:#f1f2f6;font-size:30px;color:var(--navy);cursor:pointer;font-family:inherit}
+  .stepper input{width:80px;height:54px;border:0;text-align:center;font:inherit;font-size:25px;font-weight:800;color:var(--navy)}
+  .qtyline{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .total{text-align:right;font-size:16px;color:var(--sub)}
+  .total strong{display:block;font-size:28px;color:var(--berry);font-weight:900}
+  .addr{display:grid;grid-template-columns:1fr auto;gap:8px}
+  .addr .full{grid-column:1/-1}
+  .addr button{font:inherit;font-size:17px;font-weight:700;border:0;border-radius:12px;background:var(--navy);color:#fff;padding:0 16px;cursor:pointer}
+  .agree{margin-top:24px;background:#f6f7fa;border-radius:14px;padding:16px 18px}
+  .agree details summary{cursor:pointer;font-size:16px;color:var(--sub)}
+  .agree .terms{font-size:15px;color:var(--sub);line-height:1.7;margin-top:10px}
+  .agree .terms b{color:var(--ink)}
+  .agree label{display:flex;gap:10px;align-items:flex-start;font-size:17px;font-weight:700;color:var(--ink);margin-top:12px;cursor:pointer}
+  .agree input{width:22px;height:22px;flex:none;margin-top:1px;accent-color:var(--berry)}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  .msg{margin-top:14px;font-size:17px;font-weight:700;min-height:1em}
+  .msg.err{color:#d0442c}
+  .done{display:none;text-align:center;padding:30px 0}
+  .done .ic{width:72px;height:72px;border-radius:50%;background:var(--berry);margin:0 auto;display:flex;align-items:center;justify-content:center}
+  .done b{display:block;font-size:28px;color:var(--navy);margin-top:18px}
+  .done p{font-size:18px;color:var(--sub);margin-top:10px;line-height:1.7}
+  .call{margin-top:22px;text-align:center;font-size:17px;color:rgba(255,255,255,.8)}
+  .call a{display:inline-block;margin-top:6px;font-size:clamp(30px,6.9vw,41px);font-weight:900;color:#fff;text-decoration:none;letter-spacing:-0.01em}
+  footer{background:#0e1630;color:rgba(255,255,255,.55);font-size:15px;line-height:1.8;padding:34px 0 100px}
+  footer b{color:rgba(255,255,255,.85)}
+  .floating{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px var(--pad) calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);box-shadow:0 -1px 0 var(--line);display:flex;gap:8px;transform:translateY(110%);transition:transform .25s}
+  .floating.on{transform:none}
+  .floating a{flex:1}
+  .floating .tel{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+
+  @media (max-width:560px){
+    .cgrid,.compare{gap:10px}
+    .sgrid,.egrid,.shgrid{grid-template-columns:1fr}
+    .sgrid .s{display:grid;grid-template-columns:42% 1fr;align-items:center}
+    .egrid div,.shgrid div{display:grid;grid-template-columns:90px 1fr;text-align:left;align-items:center;gap:6px 14px;padding:16px}
+    .egrid svg,.shgrid svg{grid-row:span 2;margin:0 auto}
+    .egrid b,.shgrid b{margin-top:0}
+    .bene{grid-template-columns:1fr}
+    .calcbox .row{grid-template-columns:1fr}
+  }
+  /* 국내 제조 */
+  .kr{background:#fff}
+  .flow{margin-top:44px;display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:end;text-align:center}
+  .flow svg{width:100%}
+  .flow .ar{font-size:clamp(25px,5.8vw,41px);color:var(--berry);padding-bottom:clamp(40px,9vw,70px)}
+  .flow b{display:block;font-size:clamp(15px,3.2vw,22px);color:var(--navy);margin-top:8px}
+  .flow span{display:block;font-size:clamp(13px,2.5vw,16px);color:var(--sub);margin-top:4px;line-height:1.45}
+  .vs{margin-top:44px;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+  .vs .h,.vs .r{display:grid;grid-template-columns:.9fr 1fr 1fr}
+  .vs .h div{padding:14px 10px;font-weight:800;font-size:clamp(15px,3vw,20px);text-align:center}
+  .vs .h div:nth-child(2){background:#eceae4;color:#6b6f7a}
+  .vs .h div:nth-child(3){background:var(--navy);color:#fff}
+  .vs .r div{padding:14px 10px;font-size:clamp(14px,2.9vw,18px);line-height:1.5;border-top:1px solid var(--line);text-align:center}
+  .vs .r div:first-child{font-weight:700;color:var(--navy);background:#fbfaf6}
+  .vs .r div:nth-child(2){color:#7a7e88}
+  .vs .r div:nth-child(3){color:var(--navy);font-weight:700;background:#f2f5fc}
+  .punch{margin-top:44px;background:var(--navy);color:#fff;border-radius:20px;padding:clamp(28px,6vw,44px) 20px;text-align:center}
+  .punch strong{display:block;font-size:clamp(28px,6.2vw,44px);font-weight:900;line-height:1.35;letter-spacing:-0.04em}
+  .punch strong em{font-style:normal;color:#a9bbf0}
+  .punch p{font-size:clamp(16px,3vw,20px);color:rgba(255,255,255,.75);margin-top:12px}
+  .punch .btn{margin-top:22px;background:#fff;color:var(--navy)}
+  .badges{display:flex;gap:8px;flex-wrap:wrap}
+  .badges .kr-b{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+  .ctaline{text-align:center;font-size:17px;color:var(--sub);margin:22px 0 10px}
+  /* 사진 공통 */
+  .ph{width:100%;height:100%;object-fit:cover;display:block}
+  .diagram{margin-top:40px;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+  .season{background:#0f1a12;color:#fff}
+  .season .eyebrow{color:#b9d6a0}
+  .season h2{color:#fff} .season h2 em{color:#c8e3b0}
+  .season .lead{color:rgba(255,255,255,.75)}
+  .sgal{margin-top:40px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+  .sgal figure{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4}
+  .sgal figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 12px 14px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.7));font-size:clamp(15px,3vw,20px);font-weight:700}
+  .sgal figcaption span{display:block;font-size:.8em;font-weight:500;opacity:.8;margin-top:2px}
+  .mixrow .pc{aspect-ratio:1;border-radius:50%;overflow:hidden;border:4px solid #fff;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+  .sgrid .pic{aspect-ratio:4/3}
+  .egrid .pc{aspect-ratio:4/3;border-radius:12px;overflow:hidden;margin:-10px -10px 0}
+  @media (max-width:560px){
+    .sgrid .pic{aspect-ratio:1;height:100%}
+    .egrid div{display:block!important;text-align:left!important;padding:10px 10px 18px!important}
+    .egrid .pc{margin:0 0 4px}
+    .egrid b{margin-top:10px!important}
+    .sgal{grid-template-columns:1fr 1fr 1fr;gap:6px}
+  }
+</style>
+</head>
+<body>
+
+<!-- 공용 그라디언트 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="gWhite" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="#f1efe9"/><stop offset="1" stop-color="#cfcbc0"/></radialGradient>
+    <radialGradient id="gOre" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#a9a6a0"/><stop offset="1" stop-color="#5f5c57"/></radialGradient>
+    <radialGradient id="gPeat" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#8a6443"/><stop offset="1" stop-color="#4a3220"/></radialGradient>
+    <radialGradient id="gPeat2" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#9b7451"/><stop offset="1" stop-color="#5b3e28"/></radialGradient>
+    <radialGradient id="gBerry" cx="38%" cy="32%" r="72%"><stop offset="0" stop-color="#8c9cc9"/><stop offset=".45" stop-color="#4a5d9c"/><stop offset="1" stop-color="#222e5c"/></radialGradient>
+    <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fae55"/><stop offset="1" stop-color="#3f6b2c"/></linearGradient>
+    <linearGradient id="gBag" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d4d7de"/><stop offset=".3" stop-color="#fbfbfc"/><stop offset=".65" stop-color="#f1f2f5"/><stop offset="1" stop-color="#c6cad3"/></linearGradient>
+    <linearGradient id="gSack" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9dbe2"/><stop offset=".35" stop-color="#fff"/><stop offset="1" stop-color="#c9ccd5"/></linearGradient>
+    <pattern id="weave" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 1.5h6M0 4.5h6" stroke="#8b93a6" stroke-opacity=".12" stroke-width="1"/></pattern>
+  </defs>
+</svg>
+
+<header class="top" id="top">
+  <a class="logo" href="#"><svg width="30" height="22" viewBox="0 0 40 30"><path d="M3 26 L6 7 L14 16 L20 4 L26 16 L34 7 L37 26 Z" fill="none" stroke-width="2.8" stroke-linejoin="round"/></svg>WHITE KING</a>
+  <a class="btn" href="#order">견적 받기</a>
+</header>
+
+<!-- 01 메인 비주얼 -->
+<section class="hero">
+  <div class="wrap">
+    <h1>좋은 블루베리는<br>좋은 배지에서 시작됩니다.</h1>
+    <div class="b">WHITE KING PERLITE 1400</div>
+    <p>뿌리부터 열매까지, 블루베리 농가의 건강한 재배 환경을<br>화이트킹 펄라이트가 함께합니다.</p>
+  </div>
+  <div class="scroll">SCROLL</div>
+</section>
+
+<!-- 02 신제품 소개 -->
+<section class="intro sec">
+  <div class="wrap">
+    <div class="badges"><span class="pill">블루베리 전문 농가를 위한 대용량 펄라이트</span><span class="pill kr-b">국내 제조</span></div>
+    <h3>화이트킹<br>펄라이트 1400<span class="new">신제품</span></h3>
+    <p class="desc"><b>뿌리가 숨 쉬는, 가볍고 단단한 배지</b><br>블루베리 재배를 위한 대용량 대립 펄라이트입니다.</p>
+    <div class="pvis">
+      <div><div class="zoom"><img src="assets/perlite_white.jpg" alt="화이트킹 펄라이트 입자"></div><p class="cap">약 3~6mm 대립 입자</p></div>
+      <div class="bagbox">
+        <img class="bagphoto" src="assets/tonbag.jpg" alt="화이트킹 펄라이트 1400 톤백" onerror="this.remove()"><svg class="bagsvg" data-tonbag viewBox="0 0 300 330"></svg>
+        <p class="cap">1,400L 톤백</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 국내 제조 -->
+<section class="kr sec">
+  <div class="wrap">
+    <div class="eyebrow">WHY MADE IN KOREA</div>
+    <h2>펄라이트 값의 상당 부분은<br><em>'공기' 운송비</em>입니다</h2>
+    <p class="lead">펄라이트는 원석에 높은 열을 가해 크게 부풀린 소재입니다. 다 부풀린 완제품을 바다 건너 들여오면, 배에 싣는 것의 대부분이 입자 속 공기입니다. 화이트킹은 작고 단단한 원석을 들여와 <b style="color:#1d2a56">국내 공장에서 직접 팽창</b>시킵니다.</p>
+    <div class="flow">
+      <div><svg data-pile="ore" data-n="120" data-seed="51" data-h="40" viewBox="0 0 210 125"></svg><b>원석</b><span>작고 단단해<br>실어 오기 쉬움</span></div>
+      <div class="ar">→</div>
+      <div><svg data-heat viewBox="0 0 210 125"></svg><b>국내 공장 팽창</b><span>높은 열로<br>부풀림</span></div>
+      <div class="ar">→</div>
+      <div><svg data-pile="white" data-n="300" data-seed="52" data-h="105" viewBox="0 0 210 125"></svg><b>펄라이트</b><span>가볍고<br>부피가 큼</span></div>
+    </div>
+    <div class="vs">
+      <div class="h"><div></div><div>수입 완제품</div><div>화이트킹 1400</div></div>
+      <div class="r"><div>바다를 건너는 것</div><div>부풀린 완제품<br>(대부분 공기)</div><div>작고 단단한 원석</div></div>
+      <div class="r"><div>팽창·제조</div><div>해외</div><div>국내 (KTS테크)</div></div>
+      <div class="r"><div>운송 과정</div><div>해상 운송과<br>여러 번의 상·하차</div><div>국내 공장에서<br>농가로</div></div>
+      <div class="r"><div>문의·상담</div><div>수입·유통 단계를<br>거쳐서</div><div>제조사가<br>직접</div></div>
+    </div>
+    <div class="punch">
+      <strong>같은 값이면,<br><em>공기 말고 펄라이트</em>에 쓰세요.</strong>
+      <p>국내에서 만든 1,400L 톤백, 140,000원</p>
+      <a class="btn" href="#order">배송비 포함 견적 받기</a>
+    </div>
+    <p class="note">※ 화이트킹 펄라이트 1400의 원석은 중국산이며, 팽창·제조는 대한민국(KTS테크)에서 합니다.</p>
+  </div>
+</section>
+
+<!-- 03 제품 핵심 경쟁력 -->
+<section class="core sec">
+  <div class="wrap">
+    <div class="eyebrow">CORE POINT</div>
+    <h2>블루베리의 뿌리가 원하는<br><em>4가지 핵심 조건</em></h2>
+    <div class="cgrid">
+      <div class="c"><span class="no">01</span><svg viewBox="0 0 64 64"><path d="M8 22h30a8 8 0 1 0-8-8"/><path d="M8 34h40a8 8 0 1 1-8 8"/><path d="M8 46h18"/></svg><b>통기성</b><span>뿌리에 필요한 공기층 확보</span></div>
+      <div class="c"><span class="no">02</span><svg viewBox="0 0 64 64"><path d="M32 8c10 13 17 22 17 30a17 17 0 0 1-34 0c0-8 7-17 17-30z"/><path d="M24 41a8 8 0 0 0 8 8"/></svg><b>배수성</b><span>과도한 수분 정체 완화</span></div>
+      <div class="c"><span class="no">03</span><svg viewBox="0 0 64 64"><path d="M14 50c0-21 13-37 40-40-3 27-19 40-40 40z"/><path d="M14 50 35 29"/></svg><b>경량성</b><span>배지 혼합 및 작업 편의성</span></div>
+      <div class="c"><span class="no">04</span><svg viewBox="0 0 64 64"><circle cx="32" cy="16" r="6"/><circle cx="20" cy="32" r="6"/><circle cx="44" cy="32" r="6"/><circle cx="10" cy="48" r="6"/><circle cx="32" cy="48" r="6"/><circle cx="54" cy="48" r="6"/></svg><b>대립 구조</b><span>배지 내 공극 형성에 도움</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 펄라이트가 필요한 이유 -->
+<section class="sec">
+  <div class="wrap">
+    <div class="eyebrow">WHY PERLITE</div>
+    <h2>블루베리 뿌리는<br><em>숨을 쉬어야</em> 건강합니다</h2>
+    <p class="lead">블루베리는 가는 뿌리가 얕게 퍼지는 작물이라 배지에 물이 오래 고이면 뿌리가 쉽게 상합니다. 펄라이트는 배지 사이사이에 공기층을 만들어 물은 빠지고 공기는 머무는 환경을 만들어 줍니다.</p>
+    <div class="diagram"><img class="ph" src="assets/root_diagram.jpg" alt="펄라이트를 섞은 배지 속 공기 유입, 수분 이동, 세근 발달" loading="lazy"></div>
+    <p class="note center">※ 이해를 돕기 위한 그림입니다.</p>
+  </div>
+</section>
+
+<!-- 블루베리의 계절 -->
+<section class="season sec">
+  <div class="wrap">
+    <div class="eyebrow">FROM ROOT TO FRUIT</div>
+    <h2>꽃이 피고 열매가 익기까지,<br><em>그 시작은 뿌리입니다</em></h2>
+    <p class="lead">한 해 농사의 결실은 눈에 보이지 않는 배지 속에서 먼저 결정됩니다.</p>
+    <div class="sgal">
+      <figure><img class="ph" src="assets/berry_flower.jpg" alt="블루베리 꽃" loading="lazy"><figcaption>꽃 피는 봄<span>건강한 뿌리에서</span></figcaption></figure>
+      <figure><img class="ph" src="assets/berry_green.jpg" alt="익어 가는 블루베리 열매" loading="lazy"><figcaption>열매 맺는 초여름<span>고르게 자라고</span></figcaption></figure>
+      <figure><img class="ph" src="assets/berry_ripe.jpg" alt="잘 익은 블루베리" loading="lazy"><figcaption>수확의 계절<span>알차게 익습니다</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 톤백 용량 -->
+<section class="bigbag sec">
+  <div class="wrap">
+    <div class="eyebrow">1,400L ONE TON BAG</div>
+    <h2>100L 포대 14개를<br><em>톤백 하나에</em> 담았습니다</h2>
+    <p class="lead">포대를 하나하나 뜯고 옮기던 작업을 한 번에. 규모 있게 배지를 만드는 농가를 위한 용량입니다.</p>
+    <div class="eq">
+      <div class="sacks" data-sacks="14"></div>
+      <div class="sym">=</div>
+      <div><svg data-tonbag viewBox="0 0 300 330"></svg></div>
+    </div>
+    <div class="eqlabels"><div>100L 포대 × 14개<span>총 1,400L</span></div><i>=</i><div>화이트킹 1400<span>톤백 1개</span></div></div>
+    <div class="bene">
+      <div><b>작업 시간 단축</b><span>포대 개봉·운반 횟수가 줄어듭니다</span></div>
+      <div><b>포장 쓰레기 감소</b><span>빈 포대 14장 대신 톤백 1개</span></div>
+      <div><b>재사용 톤백</b><span>다 쓴 톤백은 농장 보관용으로</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 배합 -->
+<section class="mix sec">
+  <div class="wrap">
+    <div class="eyebrow">MIXING GUIDE</div>
+    <h2>블루베리 배지,<br><em>이렇게 섞으세요</em></h2>
+    <p class="lead">피트모스와 펄라이트를 부피 기준 7:3으로 섞는 것을 권장합니다.</p>
+    <div class="grainband"><img src="assets/mix_handful.jpg" alt="피트모스와 펄라이트를 섞은 배지" loading="lazy" style="object-position:center 35%"><span>피트모스 7 : 펄라이트 3</span></div>
+    <div class="mixrow">
+      <div><div class="pc"><img class="ph" src="assets/peat_texture.jpg" alt="피트모스" loading="lazy"></div><b>피트모스</b><strong>70%</strong></div>
+      <div class="op">+</div>
+      <div><div class="pc"><img class="ph" src="assets/perlite_white.jpg" alt="펄라이트" loading="lazy"></div><b>펄라이트</b><strong>30%</strong></div>
+      <div class="op">=</div>
+      <div class="res"><div class="pc"><img class="ph" src="assets/mix_texture.jpg" alt="혼합 배지" loading="lazy"></div><b>혼합 배지</b><strong>7 : 3</strong></div>
+    </div>
+    <div class="bar"><div class="p">피트모스 70%</div><div class="w">펄라이트 30%</div></div>
+    <p class="note">※ 부피 기준 권장 비율이며, 재배 환경과 관수 방식에 따라 조절할 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- 사용 방법 -->
+<section class="sec">
+  <div class="wrap">
+    <div class="eyebrow">HOW TO USE</div>
+    <h2>사용 방법, <em>간단합니다</em></h2>
+    <div class="sgrid">
+      <div class="s"><div class="pic"><img class="ph" src="assets/peat_gloves.jpg" alt="피트모스 풀기" loading="lazy"></div><div class="txt"><span class="tag">STEP 01</span><b>피트모스 풀기</b><span>압축된 피트모스를 잘게 풀어 뭉친 부분을 없앱니다.</span></div></div>
+      <div class="s"><div class="pic"><img class="ph" src="assets/mix_hands.jpg" alt="펄라이트 섞기" loading="lazy"></div><div class="txt"><span class="tag">STEP 02</span><b>펄라이트 섞기</b><span>피트모스 7, 펄라이트 3 비율로 골고루 섞습니다.</span></div></div>
+      <div class="s"><div class="pic"><img class="ph" src="assets/seedling.jpg" alt="블루베리 묘목" loading="lazy" style="object-fit:contain;background:#fff"></div><div class="txt"><span class="tag">STEP 03</span><b>화분에 심기</b><span>혼합 배지를 화분에 담고 묘목을 심습니다.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 재배 환경 -->
+<section class="env sec">
+  <div class="wrap">
+    <div class="eyebrow">RECOMMENDED FOR</div>
+    <h2>이런 재배 환경에<br><em>추천합니다</em></h2>
+    <div class="envphoto" role="img" aria-label="블루베리 재배 농장"></div>
+    <div class="egrid">
+      <div><div class="pc"><img class="ph" src="assets/pot_rows.jpg" alt="노지 포트 재배" loading="lazy"></div><b>노지 포트 재배</b><span>배지를 직접 만들어 쓰는 대규모 포트 농장</span></div>
+      <div><div class="pc"><img class="ph" src="assets/greenhouse_pots.jpg" alt="하우스 포트 재배" loading="lazy"></div><b>하우스 재배</b><span>배수 관리가 중요한 시설 포트 재배</span></div>
+      <div><div class="pc"><img class="ph" src="assets/tunnel_house.jpg" alt="터널 하우스 재배" loading="lazy"></div><b>터널 하우스 재배</b><span>비가림 시설 안의 포트 재배</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 수량 계산 -->
+<section class="sec" id="calc">
+  <div class="wrap">
+    <div class="eyebrow">HOW MANY BAGS</div>
+    <h2>우리 농장에는<br><em>몇 개가 필요할까요?</em></h2>
+    <p class="lead">심을 주수와 화분 크기를 넣으면 필요한 톤백 수를 계산해 드립니다.</p>
+    <div class="calcbox">
+      <div class="row">
+        <div><label for="cPlants">재배 주수</label><input id="cPlants" type="number" inputmode="numeric" min="1" value="300"></div>
+        <div><label for="cPot">화분 용량</label><select id="cPot"><option value="20">20L</option><option value="30">30L</option><option value="40">40L</option><option value="50" selected>50L</option><option value="60">60L</option><option value="70">70L</option><option value="80">80L</option><option value="100">100L</option></select></div>
+      </div>
+      <div class="calcres">
+        <div class="v">펄라이트 30% 기준 <span id="cNeed">4,500L</span> 필요<strong id="cBags">톤백 4개</strong></div>
+        <a class="btn" href="#order" id="cUse">이 수량으로 주문</a>
+      </div>
+    </div>
+    <table class="qty">
+      <tr><th>재배 규모</th><th>화분</th><th>필요량</th><th>톤백</th></tr>
+      <tr><td>100주</td><td>50L</td><td>약 1,500L</td><td class="k">2개</td></tr>
+      <tr><td>300주</td><td>50L</td><td>약 4,500L</td><td class="k">4개</td></tr>
+      <tr><td>500주</td><td>50L</td><td>약 7,500L</td><td class="k">6개</td></tr>
+      <tr><td>1,000주</td><td>50L</td><td>약 15,000L</td><td class="k">11개</td></tr>
+    </table>
+    <p class="note">※ 주수 × 화분 용량 × 30% ÷ 1,400L, 소수점 올림 기준입니다. 화분 크기와 혼합 비율에 따라 달라질 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- 제품 정보 -->
+<section class="info sec">
+  <div class="wrap">
+    <div class="eyebrow">PRODUCT INFO</div>
+    <h2>제품 상세 정보</h2>
+    <table class="spec">
+      <tr><td>제품명</td><td>화이트킹 펄라이트 1400</td></tr>
+      <tr><td>용도</td><td>블루베리 배지용 (피트모스 혼합)</td></tr>
+      <tr><td>용량</td><td>1,400L (톤백 1개)</td></tr>
+      <tr><td>입도</td><td>약 3~6mm</td></tr>
+      <tr><td>충전 중량</td><td>약 160~180kg (±10%)</td></tr>
+      <tr><td>포장</td><td>재사용 톤백 (원단 색상 랜덤)</td></tr>
+      <tr><td>원석 원산지</td><td>중국</td></tr>
+      <tr><td>제조국</td><td>대한민국</td></tr>
+      <tr><td>제조·판매</td><td>KTS테크</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- 배송 -->
+<section class="sec">
+  <div class="wrap">
+    <div class="eyebrow">DELIVERY</div>
+    <h2>배송 안내</h2>
+    <div class="shgrid">
+      <div><svg viewBox="0 0 64 64"><path d="M4 18h34v28H4z"/><path d="M38 28h12l8 9v9H38"/><circle cx="16" cy="48" r="5"/><circle cx="48" cy="48" r="5"/></svg><b>화물 배송</b><span>대형 화물차로 배송</span></div>
+      <div><svg viewBox="0 0 64 64"><path d="M12 8v40h22"/><path d="M12 48 6 54"/><path d="M34 22v26"/><path d="M34 40h22"/><path d="M34 46h22"/><circle cx="20" cy="54" r="4"/><path d="M16 22h18"/></svg><b>지게차 하역 권장</b><span>하차 장비는 미리 준비</span></div>
+      <div><svg viewBox="0 0 64 64"><path d="M32 6 56 18v28L32 58 8 46V18z"/><path d="M8 18l24 12 24-12"/><path d="M32 30v28"/></svg><b>대량 구매 상담</b><span>농가·법인 환영</span></div>
+    </div>
+    <ul class="chk">
+      <li>일반 택배가 아닌 화물로 배송됩니다.</li>
+      <li>톤백 1개가 약 160~180kg이므로 지게차 등 하차 장비를 미리 준비해 주세요.</li>
+      <li>배송비는 지역에 따라 별도로 안내드립니다.</li>
+      <li>2개 이상 또는 차량 단위 구매는 별도 상담이 가능합니다.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 주문 -->
+<section class="order sec" id="order">
+  <div class="wrap">
+    <div class="eyebrow">ORDER</div>
+    <h2>이번 시즌 배지,<br><em>국내 제조로 준비하세요</em></h2>
+    <p class="lead">주소와 수량만 남기시면 배송비까지 계산해 연락드립니다.<br>결제는 통화 후 안내드립니다.</p>
+
+    <div class="form">
+      <form id="orderForm" novalidate>
+        <div class="price">
+          <div><small>톤백 1개 (1,400L)</small><strong>140,000<i>원</i></strong></div>
+          <em>배송비 별도</em>
+        </div>
+
+        <div class="f">
+          <label for="qty">구매 수량 <span class="req">*</span></label>
+          <div class="qtyline">
+            <div class="stepper"><button type="button" data-d="-1" aria-label="수량 줄이기">−</button><input id="qty" name="qty" type="number" inputmode="numeric" min="1" max="99" value="1"><button type="button" data-d="1" aria-label="수량 늘리기">+</button></div>
+            <div class="total">상품 금액 (배송비 별도)<strong id="total">140,000원</strong></div>
+          </div>
+        </div>
+
+        <div class="f">
+          <label for="name">받는 분 성함 <span class="req">*</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="성함 또는 농장명" maxlength="40">
+        </div>
+
+        <div class="f">
+          <label for="phone">연락처 <span class="req">*</span></label>
+          <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="010-0000-0000" maxlength="13">
+        </div>
+
+        <div class="f">
+          <label for="addr1">배송 주소 <span class="req">*</span></label>
+          <div class="addr">
+            <input id="zip" name="zip" type="text" placeholder="우편번호" readonly>
+            <button type="button" id="findAddr">주소 찾기</button>
+            <input class="full" id="addr1" name="addr1" type="text" placeholder="주소 찾기를 눌러 주세요" readonly>
+            <input class="full" id="addr2" name="addr2" type="text" placeholder="상세 주소 (동·호수, 농장 위치 등)" maxlength="100">
+          </div>
+        </div>
+
+        <div class="f">
+          <label for="unload">하차 장비 (지게차 등)</label>
+          <select id="unload" name="unload">
+            <option value="">선택해 주세요</option>
+            <option>있음</option>
+            <option>없음</option>
+            <option>상담 필요</option>
+          </select>
+        </div>
+
+        <div class="f">
+          <label for="memo">요청 사항</label>
+          <textarea id="memo" name="memo" maxlength="500" placeholder="희망 배송일, 진입로 안내 등"></textarea>
+        </div>
+
+        <div class="hp" aria-hidden="true"><label>홈페이지<input name="website" tabindex="-1" autocomplete="off"></label></div>
+
+        <div class="agree">
+          <details>
+            <summary>개인정보 수집·이용 안내 (펼쳐 보기)</summary>
+            <div class="terms">
+              <b>수집 항목</b> 성함, 연락처, 배송 주소<br>
+              <b>수집 목적</b> 주문 확인, 배송, 상담 연락<br>
+              <b>보유 기간</b> 주문 처리 완료 후 관련 법령에서 정한 기간 동안 보관 후 파기<br>
+              동의를 거부할 수 있으나, 거부 시 주문 접수가 어렵습니다.
+            </div>
+          </details>
+          <label><input type="checkbox" id="agree" name="agree" value="Y">개인정보 수집·이용에 동의합니다. (필수)</label>
+        </div>
+
+        <p class="msg" id="msg" role="alert"></p>
+        <button class="btn big" type="submit" id="submitBtn">배송비 포함 견적 받기</button>
+      </form>
+
+      <div class="done" id="done">
+        <div class="ic"><svg width="36" height="36" viewBox="0 0 36 36"><path d="M8 18.5l7 7 13-14" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <b>신청이 접수되었습니다</b>
+        <p>배송비를 계산해 남겨 주신 연락처로<br>곧 연락드리겠습니다.</p>
+      </div>
+    </div>
+
+    <div class="call">전화 주문 · 견적 문의<br><a href="tel:01034204255">010-3420-4255</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>화이트킹 펄라이트 1400</b><br>
+    제조·판매 KTS테크 · 문의 010-3420-4255
+  </div>
+</footer>
+
+<div class="floating" id="floating">
+  <a class="btn tel" href="tel:01034204255">전화 문의</a>
+  <a class="btn" href="#order">견적 받기</a>
+</div>
+
+<script>
+/* ===== 설정: 구글 Apps Script 웹 앱 주소를 넣으세요 ===== */
+const ORDER_ENDPOINT = "";
+const UNIT_PRICE = 140000;
+/* ======================================================= */
+
+// 상단 바 · 하단 버튼
+const topBar=document.getElementById("top"),floating=document.getElementById("floating"),orderSec=document.getElementById("order");
+function onScroll(){const y=scrollY;topBar.classList.toggle("on",y>40);
+  const r=orderSec.getBoundingClientRect();floating.classList.toggle("on",y>innerHeight*.8&&!(r.top<innerHeight&&r.bottom>0))}
+addEventListener("scroll",onScroll,{passive:true});onScroll();
+
+// ----- 그림 생성 -----
+function rng(seed){let a=seed>>>0;return()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function blob(cx,cy,r,R,n=8,j=.28){const p=[];const rot=R()*6.28;
+  for(let i=0;i<n;i++){const a=rot+i/n*6.283,rr=r*(1-j/2+R()*j);p.push([cx+Math.cos(a)*rr,cy+Math.sin(a)*rr*.92])}
+  let d="";for(let i=0;i<n;i++){const a=p[i],b=p[(i+1)%n],m=[(a[0]+b[0])/2,(a[1]+b[1])/2];
+    if(i===0){const l=p[n-1];d+=`M${((l[0]+a[0])/2).toFixed(1)} ${((l[1]+a[1])/2).toFixed(1)}`}
+    d+=`Q${a[0].toFixed(1)} ${a[1].toFixed(1)} ${m[0].toFixed(1)} ${m[1].toFixed(1)}`}return d+"Z"}
+function grain(t,cx,cy,r,R){
+  if(t==="ore")return `<path d="${blob(cx,cy,r,R,6,.5)}" fill="url(#gOre)" stroke="#4a4844" stroke-opacity=".4"/>`;
+  if(t==="white"){let s=`<path d="${blob(cx,cy,r,R,9,.32)}" fill="url(#gWhite)" stroke="#b9b4a6" stroke-opacity=".55" stroke-width="${Math.max(.4,r*.04)}"/>`;
+    const h=r>9?3:1;for(let k=0;k<h;k++){const a=R()*6.28,d=R()*r*.55;s+=`<circle cx="${(cx+Math.cos(a)*d).toFixed(1)}" cy="${(cy+Math.sin(a)*d).toFixed(1)}" r="${(r*(.05+R()*.07)).toFixed(1)}" fill="#cfcabd" opacity=".7"/>`}return s}
+  return `<path d="${blob(cx,cy,r,R,7,.6)}" fill="url(#${R()<.5?"gPeat":"gPeat2"})"/>`}
+function pileSVG(type,cx,base,W,H,N,R,wr){const it=[];for(let i=0;i<N;i++){const x=R()*2-1,top=H*(1-Math.pow(Math.abs(x),1.8));
+  let t=type;if(type==="mix")t=R()<(wr||.2)?"white":"peat";
+  it.push({x:cx+x*W/2*.96,y:base-R()*top,r:t==="white"?(type==="white"?5+R()*4:4+R()*3):t==="ore"?3+R()*2.5:2.5+R()*3,t})}
+  it.sort((a,b)=>a.y-b.y);return it.map(o=>grain(o.t,o.x,o.y,o.r,R)).join("")}
+document.querySelectorAll("svg[data-pile]").forEach(svg=>{const d=svg.dataset,R=rng(+d.seed);
+  svg.innerHTML=`<ellipse cx="105" cy="119" rx="100" ry="6" fill="#000" opacity=".1"/>`+pileSVG(d.pile,105,117,210,+(d.h||110),+d.n,R)});
+document.querySelectorAll("svg[data-heat]").forEach(svg=>{let s=`<rect x="40" y="30" width="130" height="80" rx="10" fill="#2f3a5e"/><rect x="58" y="50" width="94" height="40" rx="6" fill="#1b2242"/>`;
+  [[80,88],[105,84],[130,88]].forEach(([x,y])=>s+=`<path d="M${x} ${y} q-12 -14 0 -30 q4 12 10 8 q6 12 -10 22z" fill="#ff8a3d"/><path d="M${x+2} ${y} q-6 -8 0 -16 q6 8 0 16z" fill="#ffd36b"/>`);
+  s+=`<rect x="92" y="12" width="26" height="20" fill="#2f3a5e"/><rect x="40" y="110" width="130" height="8" rx="3" fill="#1b2242"/>`;svg.innerHTML=s});
+document.querySelectorAll("svg[data-section]").forEach(svg=>{const R=rng(+svg.dataset.seed),m=svg.dataset.section;
+  let s=`<rect width="320" height="320" fill="${m==="peat"?"#3f2a1a":"#e9eef6"}"/>`;
+  if(m==="peat"){for(let i=0;i<1500;i++)s+=grain("peat",R()*330-5,R()*330-5,4+R()*5,R);
+    for(let i=0;i<7;i++)s+=`<ellipse cx="${40+R()*240}" cy="${60+R()*220}" rx="${18+R()*14}" ry="${8+R()*6}" fill="#5f86b8" opacity=".55"/>`;
+    s+=`<text x="160" y="298" text-anchor="middle" font-size="18" font-weight="700" fill="#cfe0f5" font-family="Noto Sans KR">물 고임</text>`}
+  else{const big=[];for(let i=0;i<34;i++)big.push([R()*330-5,R()*330-5,17+R()*9]);
+    for(let i=0;i<900;i++){const x=R()*330-5,y=R()*330-5;if(big.some(b=>Math.hypot(b[0]-x,b[1]-y)<b[2]+9))continue;s+=grain("peat",x,y,4+R()*4,R)}
+    big.forEach(b=>s+=grain("white",b[0],b[1],b[2],R));
+    s+=`<g fill="none" stroke="#7aa6dc" stroke-width="3" stroke-linecap="round" opacity=".9"><path d="M120 30c10 40-20 70 0 110s-10 70 5 130"/><path d="M230 20c-10 50 20 80 0 120s15 80-5 150"/></g>`}
+  svg.innerHTML=s});
+function tonbag(){const R=rng(9);let heap="";for(let i=0;i<160;i++){const x=(R()*2-1),top=16*(1-x*x);heap+=grain("white",150+x*96,96-R()*top,3+R()*2.5,R)}
+  return `<ellipse cx="150" cy="318" rx="128" ry="11" fill="#000" opacity=".14"/>
+  <path d="M38 96 Q30 210 40 302 Q150 316 260 302 Q270 210 262 96 Z" fill="url(#gBag)"/>
+  <path d="M38 96 Q30 210 40 302 Q150 316 260 302 Q270 210 262 96 Z" fill="url(#weave)"/>
+  <path d="M66 98 Q60 205 68 300M234 98 Q240 205 232 300" stroke="#8fb0e0" stroke-width="1.3" fill="none" opacity=".8"/>
+  <path d="M84 98 Q80 205 86 302M216 98 Q220 205 214 302" stroke="#8fb0e0" stroke-width="1.1" fill="none" opacity=".6"/>
+  <ellipse cx="150" cy="96" rx="112" ry="13" fill="#e1e3e8"/><ellipse cx="150" cy="97" rx="104" ry="10" fill="#cfd2d9"/>
+  ${heap}
+  <g fill="none" stroke-linecap="round"><path d="M58 100 Q56 40 92 40 Q104 44 102 98" stroke="#f3f3f1" stroke-width="12"/><path d="M58 100 Q56 40 92 40 Q104 44 102 98" stroke="#c9cbd0" stroke-width="1.2" stroke-dasharray="3 4"/>
+  <path d="M198 98 Q196 44 208 40 Q244 40 242 100" stroke="#f3f3f1" stroke-width="12"/><path d="M198 98 Q196 44 208 40 Q244 40 242 100" stroke="#c9cbd0" stroke-width="1.2" stroke-dasharray="3 4"/></g>
+  <rect x="51" y="96" width="15" height="46" rx="2" fill="#f3f3f1" stroke="#d5d7dc"/><rect x="234" y="96" width="15" height="46" rx="2" fill="#f3f3f1" stroke="#d5d7dc"/>`}
+function drawBags(){document.querySelectorAll("svg[data-tonbag]").forEach(s=>s.innerHTML=tonbag())}
+drawBags();
+document.querySelectorAll("[data-sacks]").forEach(b=>{let h="";for(let i=0;i<+b.dataset.sacks;i++)h+=`<svg viewBox="0 0 60 78"><ellipse cx="30" cy="74" rx="24" ry="3" fill="#000" opacity=".12"/><path d="M8 10 Q4 40 8 72 Q30 76 52 72 Q56 40 52 10 Q30 6 8 10Z" fill="url(#gSack)" stroke="#b7bac4"/><text x="30" y="47" text-anchor="middle" font-size="14" font-weight="800" fill="#1d2a56" font-family="Noto Sans KR">100L</text></svg>`;b.innerHTML=h});
+document.querySelectorAll("svg[data-step]").forEach(svg=>{const st=svg.dataset.step,R=rng(40+ +st);let s="";
+  if(st==="1"){s+=`<rect x="34" y="70" width="70" height="56" rx="4" fill="#5a3d26"/>`+pileSVG("peat",160,182,140,70,500,R)+`<path d="M108 100 Q120 96 128 110" stroke="#1d2a56" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M122 104l7 7 2-9" stroke="#1d2a56" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`}
+  else if(st==="2"){s+=`<path d="M30 110 Q120 106 210 110 L190 186 Q120 194 50 186Z" fill="#c7cbd6"/><ellipse cx="120" cy="110" rx="90" ry="14" fill="#9aa1b3"/>`+pileSVG("mix",120,120,160,26,420,R,.32)+`<g transform="rotate(28 160 70)"><rect x="154" y="14" width="13" height="46" rx="6" fill="#8a5a33"/><rect x="157" y="58" width="7" height="12" fill="#9aa1b3"/><path d="M146 70 H175 L170 108 Q160.5 120 151 108 Z" fill="#b8bfcc" stroke="#8c94a6" stroke-width="2"/></g>`}
+  else{s+=`<path d="M70 110 L170 110 L158 190 L82 190Z" fill="#2b2f38"/><ellipse cx="120" cy="110" rx="50" ry="8" fill="#3a3f4a"/>`+pileSVG("mix",120,112,92,8,180,R,.3)+`<path d="M120 108 V50" stroke="#5c4a36" stroke-width="4"/>`;
+    [[120,50,-90],[120,70,-30],[120,70,-150],[120,88,-20],[120,90,-165]].forEach(([x,y,a])=>s+=`<g transform="translate(${x} ${y}) rotate(${a})"><path d="M0 0 Q14 -10 32 0 Q14 10 0 0Z" fill="url(#gLeaf)"/></g>`)}
+  svg.innerHTML=s});
+const envs={
+  pot:`<g stroke="#1d2a56" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">${[25,75,125].map(x=>`<path d="M${x-18} 78h36l-5 32h-26z"/><path d="M${x} 78V40"/><path d="M${x} 52q-14-8-18-20q14 0 18 14q4-14 18-14q-4 12-18 20"/>`).join("")}</g>${[25,75,125].map(x=>`<circle cx="${x-6}" cy="62" r="4.5" fill="url(#gBerry)"/><circle cx="${x+7}" cy="66" r="4.5" fill="url(#gBerry)"/>`).join("")}`,
+  bed:`<g stroke="#1d2a56" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 80h134v12H8z"/><path d="M20 92v22M130 92v22M75 92v22"/>${[25,55,85,115].map(x=>`<path d="M${x} 80V46"/><path d="M${x} 56q-11-6-14-16q11 0 14 11q3-11 14-11q-3 10-14 16"/>`).join("")}</g>${[25,55,85,115].map(x=>`<circle cx="${x+6}" cy="68" r="4.5" fill="url(#gBerry)"/>`).join("")}`,
+  house:`<g stroke="#1d2a56" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 112V58Q75 4 140 58V112"/><path d="M42 26V112M75 16V112M108 26V112"/><path d="M4 112h142"/>${[26,58,92,124].map(x=>`<path d="M${x} 112V86"/><path d="M${x} 94q-9-5-11-13q9 0 11 9q2-9 11-9q-2 8-11 13"/>`).join("")}</g>${[26,58,92,124].map(x=>`<circle cx="${x+5}" cy="102" r="4" fill="url(#gBerry)"/>`).join("")}`};
+document.querySelectorAll("svg[data-env]").forEach(s=>s.innerHTML=envs[s.dataset.env]);
+
+// ----- 수량 계산기 -----
+const fmt=n=>n.toLocaleString("ko-KR");
+const cPlants=document.getElementById("cPlants"),cPot=document.getElementById("cPot");let calcBags=4;
+function calc(){const p=Math.max(0,parseInt(cPlants.value)||0),v=+cPot.value,need=p*v*.3;calcBags=Math.max(1,Math.ceil(need/1400));
+  document.getElementById("cNeed").textContent=fmt(Math.round(need))+"L";document.getElementById("cBags").textContent="톤백 "+calcBags+"개"}
+cPlants.addEventListener("input",calc);cPot.addEventListener("change",calc);calc();
+document.getElementById("cUse").addEventListener("click",()=>setQty(calcBags));
+
+// ----- 주문 폼 -----
+const qty=document.getElementById("qty");
+function setQty(n){n=Math.min(99,Math.max(1,parseInt(n)||1));qty.value=n;document.getElementById("total").textContent=fmt(n*UNIT_PRICE)+"원"}
+document.querySelectorAll(".stepper button").forEach(b=>b.addEventListener("click",()=>setQty((parseInt(qty.value)||1)+ +b.dataset.d)));
+qty.addEventListener("input",()=>setQty(qty.value));
+
+const phone=document.getElementById("phone");
+phone.addEventListener("input",()=>{const d=phone.value.replace(/\D/g,"").slice(0,11);
+  phone.value=d.length<4?d:d.length<8?d.slice(0,3)+"-"+d.slice(3):d.length<11?d.slice(0,3)+"-"+d.slice(3,6)+"-"+d.slice(6):d.slice(0,3)+"-"+d.slice(3,7)+"-"+d.slice(7)});
+
+// 주소 찾기 (카카오 우편번호 서비스). 불러오지 못하면 직접 입력으로 전환
+const zip=document.getElementById("zip"),addr1=document.getElementById("addr1"),addr2=document.getElementById("addr2");
+let postcodeReady=false;
+(function(){const s=document.createElement("script");s.src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js";
+  s.onload=()=>postcodeReady=true;s.onerror=manualAddr;document.head.appendChild(s)})();
+function manualAddr(){zip.readOnly=false;addr1.readOnly=false;addr1.placeholder="주소를 직접 입력해 주세요";document.getElementById("findAddr").style.display="none";
+  document.querySelector(".addr").style.gridTemplateColumns="1fr"}
+document.getElementById("findAddr").addEventListener("click",()=>{
+  if(!postcodeReady||!window.daum||!daum.Postcode){manualAddr();addr1.focus();return}
+  new daum.Postcode({oncomplete(d){zip.value=d.zonecode;addr1.value=d.roadAddress||d.jibunAddress;addr2.focus()}}).open()});
+
+const form=document.getElementById("orderForm"),msg=document.getElementById("msg"),btn=document.getElementById("submitBtn");
+function fail(t,el){msg.className="msg err";msg.textContent=t;if(el)el.focus();return false}
+form.addEventListener("submit",async e=>{
+  e.preventDefault();msg.textContent="";
+  const name=form.name.value.trim(),tel=phone.value.trim(),q=parseInt(qty.value)||0;
+  if(q<1)return fail("구매 수량을 확인해 주세요.",qty);
+  if(!name)return fail("받는 분 성함을 입력해 주세요.",form.name);
+  if(!/^0\d{1,2}-?\d{3,4}-?\d{4}$/.test(tel))return fail("연락처를 정확히 입력해 주세요. (예: 010-1234-5678)",phone);
+  if(!addr1.value.trim())return fail("배송 주소를 입력해 주세요.",addr1.readOnly?document.getElementById("findAddr"):addr1);
+  if(!document.getElementById("agree").checked)return fail("개인정보 수집·이용에 동의해 주세요.");
+  if(!ORDER_ENDPOINT)return fail("주문 접수 준비 중입니다. 전화(010-3420-4255)로 주문해 주세요.");
+  btn.disabled=true;btn.textContent="접수 중...";
+  const body=new URLSearchParams({qty:q,name,phone:tel,zip:zip.value.trim(),addr1:addr1.value.trim(),addr2:addr2.value.trim(),
+    unload:form.unload.value,memo:form.memo.value.trim(),website:form.website.value,agree:"Y",page:location.href});
+  try{
+    await fetch(ORDER_ENDPOINT,{method:"POST",mode:"no-cors",body});
+    form.style.display="none";document.getElementById("done").style.display="block";
+    document.getElementById("order").scrollIntoView({behavior:"smooth"});
+  }catch(err){btn.disabled=false;btn.textContent="배송비 포함 견적 받기";fail("전송에 실패했습니다. 잠시 후 다시 시도하시거나 전화로 주문해 주세요.")}
+});
+</script>
+</body>
+</html>
